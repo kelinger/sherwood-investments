@@ -1,0 +1,34 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Living Trusts Simplified";
+const date = "2019-01-17";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">Types of Trusts</p>
+      <p class="mb-4">Living Trust: A living trust (also known as inter vivos trust), is created during your lifetime for the benefit of one or more beneficiaries. It is separate from your will. 
+Testamentary Trust: Trusts may also be created through the terms of your will and only become effective when you die. These are called testamentary trusts. 
+Revocable/Irrevocable Trusts: A living trust may be revocable or irrevocable, depending upon your objectives. To escape estate taxes, the trust must be irrevocable. If it is revocable, it is included in your estate and does not escape estate taxes.</p>
+      <p class="mb-4">How Does a Living Trust Work?</p>
+      <p class="mb-4">A living trust is “invisible” during your lifetime. It does not save you any income taxes each April 15th and you do not file any forms. But upon death, the living trust springs into action.</p>
+      <p class="mb-4">Let’s take the case of a married couple. When the first spouse dies, the typical “A-B” irrevocable Trust instructs that the estate be divided into two portions. This division will help save or even eliminate estate taxes.</p>
+      <p class="mb-4">What to Put in the Trusts</p>
+      <p class="mb-4">What assets do you place in the A and the B trusts? Divide your assets into two categories – growth assets and income assets. Leave the income producing assets in the survivor’s trust (the “A” portion). Place the growth assets into the “B” trust (the bypass trust).</p>
+      <p class="mb-4">Why put the growth assets into the “B” trust? The original amount placed in the trust plus all future growth of the assets in the “B” trust are free of all estate taxes upon the death of the second spouse. Assets in the “B” trust can grow for the next generation, totally protected from future estate taxes. Therefore, you want the “B” trust to grow as much as possible for future generations; use the “A” trust (as well as money outside of any trust) for the income needs of the surviving spouse. A suitable asset to place in the “B” trust can be life insurance because it can pay off several times the amount invested, free of estate and income taxes.</p>
+      <p class="mb-4">Placing the wrong assets in each trust can result in extra income taxes for you and for your beneficiaries.</p>
+      <p class="mb-4">Contact us for additional information.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

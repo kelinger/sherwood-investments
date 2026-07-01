@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "The $500,000 Mistake";
+const date = "2019-01-17";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">Focus on the Big Bucks</p>
+      <p class="mb-4">I frequently get calls from investors wanting to know the best place to invest their money. It’s a reasonable question, but I often find that the investor is focused on the wrong part of their financial situation. Does it really matter if you can get a 10% return rather than 9% and you ignore your estate plan and pay the government an unnecessary $500,000? Wouldn’t it make sense to focus on the best way to save that $500,000 in addition to focusing on how to earn another $6,000 on your $100,000 investment? The answer is obvious, but it’s not what is often done.</p>
+      <p class="mb-4">Many people believe that estate planning is about relinquishing control of your assets. It’s not. Estate planning is about maintaining control of your assets.</p>
+      <p class="mb-4">Estate planning will direct how your money is spent, based on your desires. Therefore, estate planning allows you to control your money and based on your desires, not the government’s desires.</p>
+      <p class="mb-4">Getting Started</p>
+      <p class="mb-4">We start by discussing the client’s needs and objectives. We then determine ways to achieve what our client wants. This avoids the mistake that many make, by jumping right into the tools (trusts, gifting, insurance), only to learn later that the tools don’t work as desired.</p>
+      <p class="mb-4">We also strongly suggest that clients work with a good estate attorney. Most attorneys can draw up a will, but designing the legal documents for an estate plan is very specialized. You need to work with an experienced attorney who specializes in estate planning.</p>
+      <p class="mb-4">If you really want to make a big difference in your financial picture, focus on estate planning as well as getting a higher percentage on your investments – a percentage that the government may get most of anyway.</p>
+      <p class="mb-4">Contact us for additional information.</p>
+      <p class="mb-4">We work with an excellent team of estate attorneys to assure that your estate plans meet your wishes.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

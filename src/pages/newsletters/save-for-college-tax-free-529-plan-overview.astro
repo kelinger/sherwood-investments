@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Save For College…Tax-Free 529 Plan Overview";
+const date = "2019-01-18";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">The IRS allows you to save for your children or grandchildren’s college expenses completely tax-free with the 529 Plan.</p>
+      <p class="mb-4">Tax Advantages</p>
+      <p class="mb-4">Contributions, savings and earnings on your savings all grow tax-deferred. And when the funds come out for qualified higher education expenses, they are completely free from federal income taxes.</p>
+      <p class="mb-4">Affordable</p>
+      <p class="mb-4">There’s no minimum annual amount to invest. Invest as little as $50 regularly through automatic withdrawals, or as much as $70,000 in a single year without any federal gift taxes. The lifetime maximum contribution per beneficiary (child) is $250,000. And there are no minimum annual contribution requirements.</p>
+      <p class="mb-4">Flexibility</p>
+      <p class="mb-4">The beneficiary designation can be changed to another individual. Should a beneficiary child receive a scholarship or decide not to attend college, account benefits can be transferred to another qualified family member.</p>
+      <p class="mb-4">Investment Choices</p>
+      <p class="mb-4">In the plans selected by us, there are many different investment portfolios to choose from. Some are age-based portfolios and other portfolios do not change their investment mix with age. All portfolios provide a variety of investment objectives.</p>
+      <p class="mb-4">Your Next Step</p>
+      <p class="mb-4">Please contact us if you would like more information on how you can make college more affordable.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

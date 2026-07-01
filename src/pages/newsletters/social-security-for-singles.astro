@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Social Security for Singles";
+const date = "2019-01-18";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">The Problem</p>
+      <p class="mb-4">Singles have fewer strategies than married couples for optimizing their Social Security benefits. But there are options available to them to maximize their lifetime benefits.</p>
+      <p class="mb-4">The Standard Options</p>
+      <ul class="list-disc list-inside mb-4 space-y-1"><li class="ml-4">Start at Age 62</li><li class="ml-4">Singles can start Social Security at Age 62, the same as married couples. But they take a permanent 25% reduction in their annual benefits compared to waiting until their Full Retirement Age, currently 66.</li></ul>
+      <ul class="list-disc list-inside mb-4 space-y-1"><li class="ml-4">Start at Age 66</li><li class="ml-4">The 25% permanent penalty is eliminated if you can wait to start Social Security until your Full Retirement Age, 66. This means your benefits are 33% greater than if you started at age 62.</li></ul>
+      <ul class="list-disc list-inside mb-4 space-y-1"><li class="ml-4">Start at Age 70</li><li class="ml-4">By further waiting until 70 to claim your benefits, you increase your benefits an additional 32% over your Full Retirement Age amount. This gives you a 76% increase in benefits compared to starting at age 62.</li></ul>
+      <p class="mb-4">Another Option – File and Suspend</p>
+      <p class="mb-4">Rather than filing for Social Security at age 66, a single people can “file and suspend” their benefits. This gives them the opportunity for a “do-over” until age 70.</p>
+      <p class="mb-4">By filing and suspending at age 66, at any time between ages 66 and 70 you can restart your benefits and request a lump sum payout of all your benefits back to the date of suspension. You won’t get the 8% per year increase by taking the lump sum. But this strategy gives you the ability to collect retroactive benefits. Without filing and suspending, maximum lump sum retroactive payments are limited to six months.</p>
+      <p class="mb-4">To use this strategy, you would wait to file for Social Security until age 66 and then immediately suspend it. Social Security would grow 8% per year until you restart it, presumably four years later at age 70. (There is no additional growth after age 70.) This gives you a 32% increase in Social Security, but delayed four years. Or, you could change your mind and request retroactive benefits and restart Social Security payments.</p>
+      <p class="mb-4">Bottom Line</p>
+      <p class="mb-4">Options are available to singles to maximize their benefits. Which to choose depends on their particular situation.</p>
+      <p class="mb-4">Contact us  for additional information.</p>
+      <p class="mb-4">We specialize in helping people plan and invest for retirement.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

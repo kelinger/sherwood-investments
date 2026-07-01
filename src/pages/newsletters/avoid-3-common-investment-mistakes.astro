@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Avoid 3 Common Investment Mistakes";
+const date = "2019-01-19";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">Making money is mostly about avoiding losses. If you avoid investment “mistakes”, the profits will take care of themselves. Remember, you need a 100% gain to recover from a 50% loss. So the avoidance of losses is more important than the acquisition of profits. No investing system can guarantee profits. However, there are three common mistakes that you can avoid.</p>
+      <p class="mb-4">1. Focusing on Short Term News</p>
+      <p class="mb-4">Ignore forecasts and the current state of the economy. Newspaper journalists, radio talk show hosts, and financial magazines are in the business of having you buy their news material and tune-in to their radio and TV stations. They are not in the business of helping you make money. They have no idea about the future.</p>
+      <p class="mb-4">For example, just look at some of the events of the 90s. Many people sold their stocks when Saddam Hussein invaded Kuwait. They sold their stocks out of panic at the bottom (Dow Jones Average 2350). Four months later, what appeared to be a major world event became a memory. The market quickly recovered and set off on one of the greatest bull markets in history. Could anybody have forecasted any of these events?</p>
+      <p class="mb-4">There will always be another calamity to worry about. But I recommend forgetting about the economic news because it changes too quickly and doesn’t affect what ultimately drives stock prices – company profits. As soon as it becomes “clear” to news reporters that you should be investing in utilities and now’s the time to buy bonds, it’s probably too late.</p>
+      <p class="mb-4">2. Ignoring Inflation</p>
+      <p class="mb-4">You must prepare for inflation. Even at 3% inflation, the cost of living increases every year. Some of your money must always be in growth investments: stocks or real estate that have kept up with and overcome inflation. If you ignore inflation, you will slowly erode your standard of living and have a declining standard of living as you age.</p>
+      <p class="mb-4">3. Failing to Have an Estate Plan</p>
+      <p class="mb-4">Young or old, do your estate planning now. Too many families experience lengthy, costly probate estate settlements that could easily have been avoided. I have seen millions of estate taxes paid to the IRS that could have been avoided. Estate planning is so simple and quick to do, and the cost of procrastination can be very severe for those you care about most – your family.</p>
+      <p class="mb-4">Please contact us if you would like more information on successful investment strategies and how to avoid common pitfalls.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Load or No-Load Funds?";
+const date = "2019-01-16";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">Are you better off with a load fund or a noload fund? Here are some facts.</p>
+      <p class="mb-4">The Morningstar Study</p>
+      <p class="mb-4">Investors in no-load funds are more fickle than those who buy through an advisor, according to a Morningstar Study (The Virtues of Commitment, 11/7/97 Morningstar Principia Commentary). For the three years studied, the net cash flows (an indicator of buying and selling) of no-load funds were 40% more volatile than load funds.</p>
+      <p class="mb-4">Remember, volatile net cash flows make it more difficult for the fund manager to generate a satisfactory return. The fund manager will need to trade more (increasing turnover expenses and taxes) and is forced to
+sell into a down cycle (when fund shareowners are cashing out).</p>
+      <p class="mb-4">The Dilemma</p>
+      <p class="mb-4">So are you better off with load or no-load funds? Load funds might perform better, for the reasons cited by Morningstar. But they have a significant drawback. Load funds charge you a hefty fee – in the order of 6%, right up front. Back-end funds are no better and, in fact, are usually worse. They charge a fee when you sell the fund. In addition, they charge you an additional fee of approximately 1% each year. Therefore, whether you buy a front-end or back-end mutual fund, the mutual fund family collects their fee.</p>
+      <p class="mb-4">The alternative for most investors might be no-load funds because these high fees are avoided. But no-loads tend to be more volatile and their performance can suffer, as explained in the Morningstar Study. Further,
+no-load funds are not available through stockbrokers since the broker would not receive any remuneration. You are on your own if you select no-load funds.</p>
+      <p class="mb-4">Do-It-Yourself Investors</p>
+      <p class="mb-4">If you are doing your own research, we suggest that rather than selecting funds based on load vs. no-load, you should consider some of the many more important criteria impacting the fund performance. All other things being equal, select the no-load fund. You won’t be guaranteed a better return, but at least you won’t be paying a 6% fee before you even start putting your money to work.</p>
+      <p class="mb-4">Load Funds Without Loads</p>
+      <p class="mb-4">Sherwood Investment Services is in a very enviable position. We are able to purchase the load funds as if they were no-load funds. The load funds we recommend for our clients are purchased and sold without any loads, commissions, or hidden fees – saving our clients approximately 6%. Therefore, we evaluate both the load and no-load funds and select the best of the very best load and no-loads.</p>
+      <p class="mb-4">Please contact us for more information about selecting quality, low-cost mutual funds.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Bonds vs Bond Funds. Which is Better?";
+const date = "2019-01-16";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">If you want income, you have several choices including the purchase of individual bonds or bond funds. There is a big difference between the two and which might be best for you.</p>
+      <p class="mb-4">Why Individual Bonds?</p>
+      <p class="mb-4">Individual bonds have three primary advantages: 
+• You can get exactly what you want. If you want a AAA 15-year bond, you can buy exactly that. In a bond fund, you cannot control which bonds the fund manager buys. 
+• With individual bonds, you get a fixed rate of interest that does not vary. You can count on receiving the same periodic interest payment (usually paid every six months) over the life of the bond. In a bond fund, your income will vary from month to month. 
+• With individual bonds, the face value is paid at maturity. You have the certainty of knowing how much you receive and when you receive it.</p>
+      <p class="mb-4">Why Bond Funds?</p>
+      <p class="mb-4">Bond funds offer professional management and diversification. Some investors place great value on these features. Additionally, for small investors, bond funds allow small additions or systematic withdrawals that contain principal and interest. However, with bond funds, your principal has no fixed pay-off date and the amount you receive is not certain, as it is with individual bonds.</p>
+      <p class="mb-4">Time Magazine’s Statement</p>
+      <p class="mb-4">Time magazine felt so strongly about the disadvantages of bond funds that they published an article, “Bond Fund Buyer Beware” (March 2, 1998). Time magazine made the following comment:</p>
+      <p class="mb-4">“These differences are so fundamental that it’s a stretch even to call them bond funds. They’re more like a stock. In fact, if you have money in a bond fund, what you really own is common stock in a company that invests in bonds. Clearly, investors seeking to preserve capital and earn a fixed-income stream for a set period of time have no business flirting with bond funds. They should go for individual bonds. Yet bond funds are routinely marketed as apt substitutes.”</p>
+      <p class="mb-4">We feel the same way. Individual bonds are far more appropriate in most cases. However, the right choice depends on your individual situation.</p>
+      <p class="mb-4">If you’d like to learn more about preserving your interest income, please contact us for independent advice. We will work with you to determine how to best meet your objectives.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

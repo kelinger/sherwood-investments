@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Why You Should Avoid Bond Funds";
+const date = "2019-01-16";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">The Problem with Bond Funds</p>
+      <p class="mb-4">Bond funds are convenient and give you a diversified bond portfolio. But they are not without their problems:</p>
+      <p class="mb-4">1. Risk 
+Bond funds do not provide the certainty of a fixed income. Individual bonds do. While bond fund dividends fluctuate, individual bonds pay you the same amount until maturity.</p>
+      <p class="mb-4">2. Uncertainty 
+Bond funds do not have a maturity date as do individual bonds. Therefore, return of principal is not assured.</p>
+      <p class="mb-4">3. Expense 
+Bond funds have management fees, individual bonds do not.</p>
+      <p class="mb-4">4. Performance 
+While bond prices go up as yields go down, bond fund prices are less predictable. As interest rates go down, the bond fund is buying more expensive bonds yielding less, diluting the bond fund performance.</p>
+      <p class="mb-4">What Time Magazine Said</p>
+      <p class="mb-4">For these reasons, most experienced, larger investors buy bonds and not bond funds. But very few people have realized this disparity.</p>
+      <p class="mb-4">Time Magazine ran an article on this issue in the March 2, 1998 issue. Here are some excerpts:</p>
+      <p class="mb-4">“The under-appreciated irony of bond funds is that while they invest in bonds they don’t behave like them. They’re more like a stock.”</p>
+      <p class="mb-4">“Clearly, investors seeking to preserve capital and earn a fixed-income stream for a set period of time have no business flirting with such a beast. They should go for individual bonds.”</p>
+      <p class="mb-4">“Bond-fund risk is just not well understood.”</p>
+      <p class="mb-4">Recommendation</p>
+      <p class="mb-4">If you want to avoid a possible disaster and avoid being lulled into a false sense of security, I advise investors to avoid bond funds and get individual bonds.</p>
+      <p class="mb-4">But you’ll probably never hear this advice from a stockbroker. The commission on the bond funds is too favorable (high) for the broker.</p>
+      <p class="mb-4">Your Next Step</p>
+      <p class="mb-4">Please contact us if you own bond funds and are interested in learning more about alternative, quality investments.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

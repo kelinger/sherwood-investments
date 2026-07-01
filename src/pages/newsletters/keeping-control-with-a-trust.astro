@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Keeping Control With a Trust";
+const date = "2019-01-17";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">Once your estate approaches $2 million in Washington (and many other states), we often suggest seeing a good attorney who specializes in estate planning. You might benefit from an irrevocable trust and making annual gifts to it. This serves the purpose of removing assets from your estate and reducing or even eliminating state and Federal estate taxes.</p>
+      <p class="mb-4">The common misconception is that if you give up ownership with an irrevocable trust, you must also give up control. That’s not the case. In fact, even some estate planning attorneys misunderstand this issue.</p>
+      <p class="mb-4">There are several ways to place assets in an irrevocable trust and still retain access to the funds if you need them. For example, in a private letter ruling, the IRS permitted a taxpayer to loan money to an irrevocable trust and agreed that such loans would not cause the death benefit to be included in his estate.</p>
+      <p class="mb-4">In other cases, irrevocable trusts can be set up to allow the trustee to make loans from the irrevocable trust.</p>
+      <p class="mb-4">Don’t confuse ownership and control. Good estate planning removes assets from your estate (ownership) but still gives you access and indirect authority over the assets (control).</p>
+      <p class="mb-4">Contact us for additional information.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

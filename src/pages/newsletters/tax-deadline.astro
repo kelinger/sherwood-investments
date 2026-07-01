@@ -1,0 +1,37 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Tax Deadline";
+const date = "2020-07-08";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">Tax Deadline
+April 18, 2023, is the deadline for filing your federal income tax return for the tax year 2022 or requesting an extension.  It is also the deadline to contribute to your Individual Retirement Accounts (IRAs) and Roth IRAs.</p>
+      <p class="mb-4">Note:  Normally, the deadline is April 15.  However, in 2023, the next business day, Monday, April 17, is Emancipation Day, a holiday recognized in Washington, D.C., where the IRS is headquartered.  Also, April 17 is Patriot’s Day, a state holiday in Maine and Massachusetts.  Therefore, the federal tax deadline has been moved to Tuesday, April 18.</p>
+      <p class="mb-4">Traditional IRA:  The IRS contribution limit to an IRA for the tax year 2022 is 6,000, and for 2023 it is $6,500.  However, anyone over age 50 who has a traditional IRA can make an additional “catch-up” contribution of up to $1,000, for a total of $7,000 (2022) and $7,500 (2023).  Until the tax year 2000, IRA contributions were restricted to those aged 70½ and younger.  This upper age limit restriction has been eliminated, and age is no longer a contribution criterion.</p>
+      <p class="mb-4">Roth IRA:  Starting in the tax year 2000, all the IRA contributions and age limits apply to Roth IRAs.  Thus, the contribution limit for an IRA is 6,000 (2022) and $6,500 (2023).  Those aged 50 and older may contribute an additional “catch-up” of $1,000.  There are no age restrictions; your young 5-year-old can contribute to their Roth IRA if the contribution amount does not exceed their income.  The same rule applies if you are 80 and retired but have income from a second job.  You can contribute to your Roth IRA if your contribution does not exceed your income.</p>
+      <p class="mb-4">Quick FAQs about 2022 Taxes
+Now that you know the deadlines associated with your taxes, as a local Redmond, WA financial advisor, let me quickly wrap everything up with some short and straightforward FAQs you might need to know.</p>
+      <p class="mb-4">What is the tax deadline for the 2022 tax year?
+April 15, 2023, for regular filing. The estimated tax dates for 2022 are April 18th, 2022, June 15, 2022, September 15, 2022, and January 17, 2023.</p>
+      <p class="mb-4">What is the IRS tax filing deadline for 2023?
+If you’re talking about the 2022 tax year, the deadline is April 15, 2023. However, considering the 2023 tax year, you need to be aware that the tax filing deadline for regular filers for the 2023 tax year is roughly estimated to be April 15, 2024!</p>
+      <p class="mb-4">When are Federal and State Taxes Due?
+Federal and state taxes are generally due at the same time on the same deadlines mentioned above. The IRS and state tax agencies allow tax filing extensions for taxpayers needing a little more time.</p>
+      <p class="mb-4">When does tax season end?
+In the US, tax season is usually considered February 1st through April 30th. However, due to extension filing, tax returns can be processed late into the year. That said, tax years match up precisely with each calendar year, so the 2022 tax year is from January 1, 2022, through December 31, 2022.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

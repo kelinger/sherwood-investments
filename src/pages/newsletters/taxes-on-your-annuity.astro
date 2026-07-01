@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Taxes on Your Annuity";
+const date = "2019-01-16";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">Here are some important facts regarding the taxes on annuities.</p>
+      <p class="mb-4">1. Unlike stocks, annuities do not enjoy a step up in basis at death. If you buy a stock for $10 per share and then die when the value is $100 per share, all of the capital gain is forgiven. This is called a “step up in basis.” Unfortunately, if you die owning an annuity, the entire gain is taxable at ordinary (high) income rates. There is no step up in the cost basis of annuities upon death.</p>
+      <p class="mb-4">2. Annuities are taxed “last in, first out.” The last dollar that went in to your annuity is taxed first when you withdraw it. Since the last dollar that went in was interest, it’s fully taxable, as ordinary (high) income. All of your withdrawals are taxable interest until you get down to the principal, which you paid tax on previously. (For annuities purchased before August of 1982, the tax rules are different.)</p>
+      <p class="mb-4">3. If you annuitize the annuity (opt for payments over a specified period of time), then part of each payment is considered principal and part interest. Let’s take the example of an annuity that was purchased for $50,000 and is now worth $100,000. You want to annuitize it over your lifetime and the annuity company tells you that the total projected payments you are to receive will total $150,000. Therefore, 1/3 of each payment you receive ($50,000 original investment divided by total payments to be received) is a non-taxable return of principal. The other 2/3 of each payment is taxed as ordinary income. Once you have received all of the principal back, the remaining payments are completely taxable as ordinary income.</p>
+      <p class="mb-4">4. If you give an annuity as a gift (i.e., change the owner of the annuity), the deferred interest becomes taxable. This is true whether you give the annuity to charity, your spouse or your children. However, as a practical matter, we notice that many annuity companies do not issue 1099 forms when there is a change in ownership. It becomes your responsibility to report the gain.</p>
+      <p class="mb-4">Confused? Let us look at your annuity contract and we’ll explain your options for maximizing its value. Please contact us for independent advice.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

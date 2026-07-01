@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Ladder Your Bonds";
+const date = "2019-01-16";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">The Problem</p>
+      <p class="mb-4">Have you had this dilemma? You want to invest in bonds to provide income. Your choice is a long-term bond at 6% or a shorter-term bond at 3%. Which should you buy?</p>
+      <p class="mb-4">You may wonder, what if interest rates rise? Then you’ll be stuck in these bonds and you won’t be able to get out in order to get higher rates. So you buy the short-term bond.</p>
+      <p class="mb-4">But what if interest rates fall? Then you’ll be sorry that you did not buy the longer-term bond and lock in a higher rate. Whatshould you do?</p>
+      <p class="mb-4">The Solution – Laddering</p>
+      <p class="mb-4">Many investors “ladder” the maturity dates of their bonds. Laddering your maturity dates works as follows. You divide your bond portfolio into parts, each representing a rung on a ladder. Each rung matures at a different time. Bonds farther up the ladder mature later than those at the bottom of the ladder. The bottom rung might represent 1-year bonds, the next rung are 3-year bonds, and so on. The top rungs might represent 20-year and 30-year bonds.</p>
+      <p class="mb-4">When you ladder your bonds, you buy bonds with different maturity dates, or on different rungs of the ladder. As the bonds mature, you roll them over into similar bonds (same position on the ladder), but at the new, prevailing interest rate.</p>
+      <p class="mb-4">How to Ladder</p>
+      <p class="mb-4">Longer-term bonds usually pay the highest rates and provide a defense to interest rates going down. However, if rates rise, then when the one-year bond matures, the money will be reinvested in one-year bonds, but at the new, higher rate. Similarly, the other shorter-term bonds are reinvested in bonds with the same maturity interval, or rung on the ladder.</p>
+      <p class="mb-4">Benefit of Laddering</p>
+      <p class="mb-4">Laddering serves to remove the dilemma of which bonds to buy and provides a hedge against changes in interest rates in either direction.</p>
+      <p class="mb-4">Should You Ladder Your Bonds?</p>
+      <p class="mb-4">Laddering is logical and sensible and can be constructed with treasury securities, corporate bonds and municipal bonds.</p>
+      <p class="mb-4">If you’d like to learn more about preserving your interest income, please contact us for independent advice. We can design a quality portfolio for you with bonds and other fixed income investments</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

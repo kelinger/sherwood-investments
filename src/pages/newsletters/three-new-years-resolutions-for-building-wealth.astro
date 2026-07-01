@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Three New Year’s Resolutions for Building Wealth";
+const date = "2024-01-15";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">Here are three easy steps for building your wealth.</p>
+      <p class="mb-4">Resolution No. 1 – Pay off your credit cards
+There is nothing wrong with credit cards.  However, make sure you completely pay them off each month.  Do not carry over a balance to the next month, not even a few dollars.  The annual interest on credit cards ranges between 20% and more than 28%.  This far exceeds the average return in the stock market.  A credit card charging 20% annual interest on your cash balance is the same as earning a negative 20%.  You wouldn’t tolerate losing 20% or 25% every year on your investments.  Pay off any credit cards debt as soon as possible.</p>
+      <p class="mb-4">Resolution No. 2 – Put the Maximum into a Roth</p>
+      <p class="mb-4">A Roth IRA is a great way to save for the future.  All money you put into a Roth grows tax-free.  Unlike a Regular IRA, you do not pay any taxes on withdrawals.  You can contribute for yourself and your spouse (if filing jointly) at any age if you have taxable income.  There are restrictions, however.  Your modified adjusted gross income must be below a certain level.  Also, there is an annual cap on the amount you can contribute, so check with a us to make sure you are eligible.  If you aren’t sure if your income will be under the allowable limit, your contributions can be reversed without penalty, if done before April 15 of the following year.</p>
+      <p class="mb-4">You might have money sitting in the bank that is earning next to nothing – and this “next to nothing” is taxed!  Take some of this money and fund your Roth IRA.  If you don’t have a Roth IRA, please call us and we can open one for you.</p>
+      <p class="mb-4">Resolution No. 3 – Write a Will
+Dying without a will is guaranteed to result in a costly, time-consuming hassle for your executors.  There are lots of pitfalls in downloading an online template.  Spend the couple of hundred dollars to have a will written for you by an estate attorney.  Be sure that it is witnessed by two people in your presence or it can be deemed invalid, depending on your state laws.  If your will was written when you lived in another state, have it reviewed and updated by an estate attorney in your state.  State laws vary and some or all of your will might be invalid in your current state.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

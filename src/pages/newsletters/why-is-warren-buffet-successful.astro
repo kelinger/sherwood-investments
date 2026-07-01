@@ -1,0 +1,40 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Why is Warren Buffet Successful?";
+const date = "2019-01-22";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">Warren Buffet is one of the most successful investors of our generation. He accumulated over billions of dollars of personal wealth by buying stocks. Notice I did not say he accumulated his wealth by “trading” or stocks. I said “buying” because he buys stocks and rarely sells them.</p>
+      <p class="mb-4">Since Warren Buffet has been so successful, wouldn’t it be wise to pattern your investing after the major principals he uses?</p>
+      <p class="mb-4">Here’s how Warren Buffet thinks as opposed to how many other investors think. Below are some direct quotes or summaries of his philosophy:</p>
+      <p class="mb-4">Buffet: Trying to predict market swings is unrealistic and unimportant.
+Others: What effect will rising interest rates have on my stocks?</p>
+      <p class="mb-4">Buffet: A short focus is not conducive to profits. What you need is patience.
+Others: Should I buy Internet stocks now?</p>
+      <p class="mb-4">Buffet: There seems to be some perverse human characteristic that likes to make easy things difficult. 
+Others: I heard on CNBC this morning that utility companies will probably cut their dividends so doesn’t that mean I should….</p>
+      <p class="mb-4">Buffet: The most important quality for an investor is temperament, not intellect. 
+Others: I watch the Nightly Business Report so that I can learn as much as possible about investing.</p>
+      <p class="mb-4">How to be Successful</p>
+      <p class="mb-4">If you would like to invest more like Buffet and less like many investors and mutual fund managers, we advise the following:</p>
+      <p class="mb-4">1. Buy great companies and mutual funds. 
+2. Have a long-term focus. 
+3. Ignore short-term market fluctuations. 
+4. The next time you listen to CNBC, remember that TV and newspapers are in the business of increasing their subscriber base. They are not in the business of making you rich.</p>
+      <p class="mb-4">Contact us for additional information.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "You Need More Than a Will";
+const date = "2019-09-26";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">Problem:  
+A friend in our neighborhood, “Joe”, said that his dad passed away several months ago.  Joe is the executor and is now trying to fulfill his obligations of settling the estate.  His father was a very private person and Joe is spending a lot of time trying to track down items which should normally be simple to locate, such as where are all the accounts and the will.  Joe said, “There have been a number of surprises and it’s been way more complicated than necessary.  But my dad was very private, and we thought it was taken care of.”  He went on to say, “It could take up to 6 months or more before everything is settled and it’s not fun.”</p>
+      <p class="mb-4">Solution
+Joe’s problem is all too common.  Most people have a will.  Bad if they don’t.  But I strongly suggest to all my clients that they should also have a separate document that they create, showing where their accounts are, location of the key to the safe deposit box and many other important items.  Do you want to be buried or cremated?  Don’t put this in your will.  Too late if you are cremated and you didn’t want this.  There are no do-overs.  And don’t assume your spouse or kids will remember all the details you told them.  They will be under a lot of stress and need it in writing.</p>
+      <p class="mb-4">I suggest creating this separate document as a Word document so you can easily modify it and add items or modify it.  You don’t need a lawyer to do this.  And don’t put any account numbers or account values in this document.  Just who is your financial advisor or where are your assets and other important information.  Be sure to include where you keep the key to your safe deposit box, name of your attorney and location of your will.  Distribute this document to your executor/kids/spouse.  Keep it in the Cloud so your executor and kids have immediate and up to date access to it.  Since you don’t reveal in the document any account numbers or value of your accounts, you can still be as private a person as you wish.</p>
+      <p class="mb-4">Tip No. 1
+If you, your kids or other loved ones don’t want to create a will, use a TOD (Transfer on Death).  It’s a simple process to create one.  It’s a one pager available from your investment advisor.  It is very, very effective and facilitates the transfer of assets upon death.  You don’t even go through probate.</p>
+      <p class="mb-4">For a quick summary of a TOD, go to TOD .</p>
+      <p class="mb-4">Tip No.2
+Don’t forget that your will does not control the beneficiaries of your IRA.  This is done through the IRA Beneficiary Designations.  Be sure to keep it up to date for all your IRAs and 401(k)s.</p>
+      <p class="mb-4">Bottom Line
+If Joe’s dad had followed these simple suggestions, settling the estate would be a simple process.</p>
+      <p class="mb-4">Contact us  for additional information.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

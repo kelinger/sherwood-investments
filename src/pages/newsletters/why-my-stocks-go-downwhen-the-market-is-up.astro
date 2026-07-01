@@ -1,0 +1,37 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Why My Stocks Go Down When the Market is Up";
+const date = "2019-01-31";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">The Question</p>
+      <p class="mb-4">I was asked why the stock market might be up on any given day, but this person’s investments might move in the other direction. And frequently visa-versa. Excellent question and let me try to explain.</p>
+      <p class="mb-4">The Simple Answer</p>
+      <p class="mb-4">“The stock market”, as reported by the news is the “Dow Jones Industrial Average (DJIA or DJIA-30)”. The DJIA consists of only 30 stocks. 30 stocks! This just a tiny fraction of the number of companies listed on the different stock exchange. There are over 3,000 stocks traded on the New York Stock Exchange (NYSE). There are also thousands of other companies traded on other exchanges, such as the NASDAQ and the AMEX.</p>
+      <p class="mb-4">So, the easy answer of what is wrong with using the DJIA as representative of “the market” is that it is only a tiny sample of the stocks traded.</p>
+      <p class="mb-4">There’s More</p>
+      <p class="mb-4">But there are other problems. The DJIA represents only large companies such as Microsoft, Apple, etc.  The stock market (and your portfolio) consists of companies of all sizes, not just these huge companies.</p>
+      <p class="mb-4">Another problem is the way the DJIA is calculated. Two companies might have a 10% change, but a higher priced stock moves the DJIA more than a lower priced stock. A $200 company moves the average 10-times as much as a $20 company.</p>
+      <p class="mb-4">Better Indicators</p>
+      <p class="mb-4">Rather than using just the DJIA, another indicator of the market is the S&P-500. At least it covers 500 stocks and is widely reported. But it is still limited to mostly large companies.</p>
+      <p class="mb-4">A still better indicator of market performance on any day is the number of companies advancing and declining. Today, while “the market” was up 52 points, there were more declining companies than advancing on all major stock exchanges. On the NYSE, there were roughly 3 stocks down for every 2 stocks up. On the NASDAQ, there were roughly 2 stocks down for every stock up.</p>
+      <p class="mb-4">Bottom Line</p>
+      <p class="mb-4">The stock market consists of more than just the 30-stocks in the DJIA reported by the news.</p>
+      <p class="mb-4">Please contact us if you want easy to understand answers to your questions</p>
+      <p class="mb-4">.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

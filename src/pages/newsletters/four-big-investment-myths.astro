@@ -1,0 +1,40 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Four Big Investment Myths";
+const date = "2019-01-27";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">Market myths and half‐truths abound in the stock market.  Much of what people think they know about  the market is flawed.  People lose money in the stock  market because they make too many mistakes based  on these myths.</p>
+      <p class="mb-4">Myth 1:  Buy Low and Sell High</p>
+      <p class="mb-4">A cheap or falling stock is usually no bargain.  It might just a weak one.  Just because a stock fell from $40  to $20 does not mean it will ever reach $40 again.  It is frequently better to buy those stocks that are moving higher.  That’s because stocks tend to move in cycles and those that are rising tend to continue to rise.  Those that are falling tend to continue to fall.</p>
+      <p class="mb-4">Myth 2:  Buy and Hold</p>
+      <p class="mb-4">This recommendation frequently makes sense, but not if carried to extremes. It ’s true that many excellent stocks drop and then recover after a few months. But others take five years or longer to recover, and some never do.  If you made a mistake,  sell the problem stock or fund and move on.</p>
+      <p class="mb-4">Myth 3: Be Conservative as You Age</p>
+      <p class="mb-4">Conventional wisdom says that you should become more conservative as you get older. A common rule of thumb is that the percent of your investments in bonds should equal your age, and  the  remaining  money placed in equity (stocks and stock funds).  At  age 60, you would have 60% in bonds, 40% in stocks.  While you might want to become more conservative  as  you  get  older,  age  should  not  drive  your  investment  strategy. Instead,  your  objectives should determine your investment strategy.  If your  objective is that you need income and cannot afford to lose money, then  you might  want  to  be  heavily  invested  in  bonds. Similarly,  if  you are  looking  for  growth and can afford the risk, you might be invested  only in stocks and stock funds – even at age 80.</p>
+      <p class="mb-4">Letting age drive your investment strategy – rather  than  your  objectives  – can  give  you  investment  volatility  and  returns  that  don’t  match  your  temperament and needs.</p>
+      <p class="mb-4">Myth 4:  Look at P/E Ratio</p>
+      <p class="mb-4">A favorite tool of investors is the P/E ratio.  This is the  price of the stock divided by the company’s earnings  per share.  Conventional wisdom is that stocks with  low  P/E  ratios  are  better  values  than  higher  P/E  stocks and these should be favored.</p>
+      <p class="mb-4">But there are two problems with this approach:  
+1.  A  low  P/E  means  that  the  stock  price  dropped, and perhaps with good reason.  If  so,  it  might  also  have  little  prospect  of  recovering.  (See Myth 1.)  
+2.  There  are  many  good  companies  with  consistently high P/E ratios.</p>
+      <p class="mb-4">Here’s a better tool.  Rather than looking at just the  P/E ratio, look at the P/E/G ratio.  This is the P/E ratio  divided by the annual growth rate of the company.</p>
+      <p class="mb-4">Fast  growing  companies  with  new  products  and  ideas  will  have  higher  P/E  ratios  but  lower  P/E/G  ratios.  (Low P/E/G ratios are good.)</p>
+      <p class="mb-4">As an example, consider two companies, A & B, with  identical P/E ratios of 20.  Company A has a growth  rate of 2%/year and Company B is growing 20%/year.   The P/E/G ratio of A is a whopping 10.0, but B is only  1.0.  Which do you think is a better bargain?  I would  pick B (because of its lower  P/E/G ratio) .</p>
+      <p class="mb-4">Contact us for additional information.</p>
+      <p class="mb-4">We specialize in helping people plan and invest for retirement.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

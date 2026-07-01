@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Social Security – When Don’t You Need Part B?";
+const date = "2019-01-18";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">When Do You Need Part B?</p>
+      <p class="mb-4">If you are age 65 or older, you must be on Medicare Part B (with some exceptions, as noted in the next section). Part A is free. Part B is obtained from any of a number of insurance companies.  If you delay enrolling in Part B, there is a 10% penalty for each month you delay enrolling.  This penalty is with you for the rest of your life.</p>
+      <p class="mb-4">When Don’t You Need to Enroll in Part B?</p>
+      <p class="mb-4">There are situations where you do not have to enroll in Medicare, Part B.  Two common ones are the following.</p>
+      <ul class="list-disc list-inside mb-4 space-y-1"><li class="ml-4">If you are still working at 65 and are covered by your employer’s health insurance plan, or if your spouse is still working and you are covered by his or her employer’s health insurance plan, then you DO NOT have to take Medicare Part B at age 65.  You don’t need to apply for Part B until you stop working and lose your employer’s regular health coverage, or you lose your spouse’s employer’s health coverage. In this case, there is no penalty when you finally do apply for Part B.</li><li class="ml-4">If you are receiving retirement benefits from Social Security before age 65 or Social Security Disability benefits for 24 months, you will be automatically enrolled in Medicare Parts A and B.</li></ul>
+      <p class="mb-4">For More Information</p>
+      <p class="mb-4">For more information on Medicare Part B enrollment requirements, go to:
+http://www.medicarerights.org/PartB-Enrollment-Toolkit/Medicare-Part-B-Enrollment-Periods.pdf</p>
+      <p class="mb-4">Contact us for additional information.</p>
+      <p class="mb-4">We specialize in helping people plan and invest for retirement.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

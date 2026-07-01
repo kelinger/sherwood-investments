@@ -1,0 +1,38 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Retirement Plan Rollover Options";
+const date = "2020-07-19";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">Retirement Plan Rollover Options
+When you leave (or have left) an employer, you have several choices of what to do with your qualified retirement plan such as a 401(k) or 403(b).  Each choice has distinct advantages and disadvantages which are discussed here.</p>
+      <p class="mb-4">a. Rollover assets to an IRA managed by yourself or by Sherwood Investments</p>
+      <p class="mb-4">b. Leave assets in your former employer’s plan</p>
+      <p class="mb-4">c. Move assets to your new employer’s plan</p>
+      <p class="mb-4">d. Take a lump sum distribution</p>
+      <p class="mb-4">Some of the factors that should be considered and compared include taxes and penalties; services offered; the number and type of investment options; fees and expenses; treatment of employer stock; when minimum distributions may be required; and protection of assets from creditors and legal judgments.</p>
+      <p class="mb-4">a. Rollover to an IRA
+Rolling over your assets to an IRA managed by Sherwood Investments or even one managed by yourself is a direct transfer and not a taxable event.  Advantages of this option include consolidating your retirement account with other assets being managed for you.  This will most likely reduce the total average cost of professional management services to you since the management fee charged by many investment advisors (including Sherwood Investments) decreases as your assets increase.</p>
+      <p class="mb-4">You will also have a wider selection of investments available to you than with an employer sponsored plan.  Another benefit is that you have the flexibility to convert the IRA to a Roth IRA, unavailable to you if you keep your assets in an employer sponsored plan. Your assets that are rolled over into an IRA can continue growing tax-deferred.  You will, however, be required to take the mandatory Required Minimum Distributions (RMD), starting at age 72.5.</p>
+      <p class="mb-4">b. Leave assets with your former employer
+If you leave your investments with your employer, they will remain tax deferred (same as Option a, above) and there is no additional paperwork.  Penalty-free withdrawals may be permitted if you separated from service after age 55 and there may be increased protection from creditors.  The investment products may have a higher or lower cost.  Disadvantages include very limited investment choices; potentially limited access and control; your eligibility to rollover the assets may lapse; you typically are charged administrative fees or other charges.</p>
+      <p class="mb-4">c. Move assets to your new employer
+The advantages and disadvantages are similar to Option b, above.</p>
+      <p class="mb-4">d. Take a lump sum distribution
+If you take a lump sum distribution, all your money is immediately available to you.  However, there are a number of significant disadvantages.  The money no longer grows tax-deferred.  Also, there is a mandatory 20% withholding for federal taxes if you are under age 59.5.  There may be additional taxes (depending on your tax bracket) that you owe when you file your federal tax return.  There may be state and local taxes on your distribution.  There also is a 10% penalty if you under age 59.5.  Because of these costs, this is usually the least desirable choice.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

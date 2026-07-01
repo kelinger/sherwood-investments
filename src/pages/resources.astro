@@ -1,31 +1,107 @@
 ---
 import Layout from '../layouts/Layout.astro';
+const newsletters = [
+  { title: "The Big Tax Bill — Passed July 4, 2025", slug: "/newsletters/the-big-tax-bill-july-4-2025", date: "2025-07-07" },
+  { title: "Three New Year's Resolutions for Building Wealth", slug: "/newsletters/three-new-years-resolutions-for-building-wealth", date: "2024-01-15" },
+  { title: "Key Steps for Building Wealth", slug: "/newsletters/key-steps-for-building-wealth", date: "2023-04-07" },
+  { title: "Advance Directives – An Important Part of Estate Planning", slug: "/newsletters/advance-directives-an-important-part-of-estate-planning", date: "2022-07-23" },
+  { title: "Does a bad market start mean a bad finish?", slug: "/newsletters/does-a-bad-market-start-mean-a-bad-finish", date: "2022-07-04" },
+  { title: "Inflation and the Market", slug: "/newsletters/inflation-and-the-market", date: "2022-05-19" },
+  { title: "How to Make Sure Your Money Lasts During Retirement", slug: "/newsletters/how-to-make-sure-your-money-lasts-during-retirement", date: "2021-04-25" },
+  { title: "The Stock Market – October 2020", slug: "/newsletters/the-stock-market-october-2020", date: "2020-11-01" },
+  { title: "What a Trump or Biden Win Means for the Stock Market – Part 2", slug: "/newsletters/what-a-trump-or-biden-win-means-for-the-stock-market-part-2", date: "2020-08-28" },
+  { title: "What a Joe Biden Win Means for the Stock Market – Part 1", slug: "/newsletters/what-happens-if-joe-biden-wins", date: "2020-08-24" },
+  { title: "Retirement Plan Rollover Options", slug: "/newsletters/retirement-plan-rollover-options", date: "2020-07-19" },
+  { title: "Tax Deadline", slug: "/newsletters/tax-deadline", date: "2020-07-08" },
+  { title: "RMD RULES FOR 2020 – Updated June 23, 2020", slug: "/newsletters/rmd-rules-for-2020-updated-june-23-2020", date: "2020-06-25" },
+  { title: "Deduct Charitable Donations in 2020 – Without itemizing", slug: "/newsletters/deduct-charitable-dnations-in-2020-even-if-you-do-not-itemize", date: "2020-05-02" },
+  { title: "Market Update – March 9, 2020", slug: "/newsletters/market-update-march-9-2020", date: "2020-03-09" },
+  { title: "RMD Starting Age Now 72 – The Good & Bad Secure Act", slug: "/newsletters/2195", date: "2019-12-25" },
+  { title: "Schwab-TD Ameritrade Merger – Not a Done Deal", slug: "/newsletters/schwab-td-ameritrade-merger-not-a-done-deal", date: "2019-11-21" },
+  { title: "Social Security – Spousal Benefits, File and Suspend & Divorced Spouses", slug: "/newsletters/social-security-spousal-benefits-and-file-and-suspend", date: "2019-10-20" },
+  { title: "You Need More Than a Will", slug: "/newsletters/you-need-more-than-a-will", date: "2019-09-26" },
+  { title: "Inverted Yield Curve and the Market", slug: "/newsletters/inverted-yield-curves-and-the-market", date: "2019-08-15" },
+  { title: "Roth IRA – Summary", slug: "/newsletters/roth-ira-summary", date: "2019-02-05" },
+  { title: "Fixed Index Annuities – Beware!", slug: "/newsletters/fixed-index-annuities-beware", date: "2019-02-04" },
+  { title: "Social Security – Two Simple Rules", slug: "/newsletters/social-security-two-simple-rules", date: "2019-02-03" },
+  { title: "Social Security – Penalty for Starting Benefits Early", slug: "/newsletters/social-security-penalty-for-starting-benefits-early", date: "2019-02-02" },
+  { title: "The Power of Saving Early", slug: "/newsletters/the-power-of-saving-early", date: "2019-02-01" },
+  { title: "Why My Stocks Go Down When the Market is Up", slug: "/newsletters/why-my-stocks-go-downwhen-the-market-is-up", date: "2019-01-31" },
+  { title: "Transfer on Death (TOD) Advantages", slug: "/newsletters/transfer-on-death-tod-advantages", date: "2019-01-30" },
+  { title: "Wills – Caution", slug: "/newsletters/wills-caution", date: "2019-01-29" },
+  { title: "Dollar Cost Averaging", slug: "/newsletters/dollar-cost-averaging", date: "2019-01-28" },
+  { title: "Four Big Investment Myths", slug: "/newsletters/four-big-investment-myths", date: "2019-01-27" },
+  { title: "When to Sell a Mutual Fund", slug: "/newsletters/when-to-sell-a-mutual-fund", date: "2019-01-26" },
+  { title: "Increase Your Chances of Making Money", slug: "/newsletters/increase-your-chances-of-making-money", date: "2019-01-22" },
+  { title: "Why is Warren Buffet Successful?", slug: "/newsletters/why-is-warren-buffet-successful", date: "2019-01-22" },
+  { title: "Should You Convert Your IRA to a Roth?", slug: "/newsletters/should-you-convert-your-ira-to-a-roth", date: "2019-01-19" },
+  { title: "Six Ways to Reduce the Cost of Long-Term Care Insurance", slug: "/newsletters/six-ways-to-reduce-the-cost-of-long-term-care-insurance", date: "2019-01-19" },
+  { title: "Avoid 3 Common Investment Mistakes", slug: "/newsletters/avoid-3-common-investment-mistakes", date: "2019-01-19" },
+  { title: "Social Security Basics", slug: "/newsletters/social-security-basics", date: "2019-01-18" },
+  { title: "Social Security – When Can You and Widows & Widowers Start Social Security?", slug: "/newsletters/social-security-when-can-you-and-widows-widowers-start-social-security", date: "2019-01-18" },
+  { title: "Social Security Rules – Divorce and Remarriage", slug: "/newsletters/social-security-rules-divorce-and-remarriage", date: "2019-01-18" },
+  { title: "Social Security for Singles", slug: "/newsletters/social-security-for-singles", date: "2019-01-18" },
+  { title: "Social Security for Widows", slug: "/newsletters/social-security-for-widows", date: "2019-01-18" },
+  { title: "Social Security – Divorced Spouse", slug: "/newsletters/social-security-divorced-spouse", date: "2019-01-18" },
+  { title: "Social Security – When Don't You Need Part B?", slug: "/newsletters/social-security-when-dont-you-need-part-b", date: "2019-01-18" },
+  { title: "Understanding Medicare Enrollment Periods", slug: "/newsletters/understanding-medicare-enrollment-periods", date: "2019-01-18" },
+  { title: "Save For College…Tax-Free 529 Plan Overview", slug: "/newsletters/save-for-college-tax-free-529-plan-overview", date: "2019-01-18" },
+  { title: "The $500,000 Mistake", slug: "/newsletters/the-500000-mistake", date: "2019-01-17" },
+  { title: "Estate Planning – Frequently Asked Questions", slug: "/newsletters/estate-planning-frequently-asked-questions", date: "2019-01-17" },
+  { title: "Executors – Frequently Asked Questions", slug: "/newsletters/executors-frequently-asked-questions", date: "2019-01-17" },
+  { title: "Living Trusts Simplified", slug: "/newsletters/living-trusts-simplified", date: "2019-01-17" },
+  { title: "Three Living Trust Mistakes", slug: "/newsletters/three-living-trust-mistakes", date: "2019-01-17" },
+  { title: "Cut Your Estate Taxes With a Personal Residence Trust", slug: "/newsletters/cut-your-estate-taxes-with-a-personal-residence-trust", date: "2019-01-17" },
+  { title: "Keeping Control With a Trust", slug: "/newsletters/keeping-control-with-a-trust", date: "2019-01-17" },
+  { title: "Should You Have a Dynasty Trust?", slug: "/newsletters/should-you-have-a-dynasty-trust", date: "2019-01-16" },
+  { title: "Bonds Can Be Riskier Than Stocks", slug: "/newsletters/bonds-can-be-riskier-than-stocks", date: "2019-01-16" },
+  { title: "Why You Should Avoid Bond Funds", slug: "/newsletters/why-you-should-avoid-bond-funds", date: "2019-01-16" },
+  { title: "Bonds vs Bond Funds. Which is Better?", slug: "/newsletters/bonds-vs-bond-funds-which-is-better", date: "2019-01-16" },
+  { title: "Taxes on Your Annuity", slug: "/newsletters/taxes-on-your-annuity", date: "2019-01-16" },
+  { title: "Ladder Your Bonds", slug: "/newsletters/ladder-your-bonds", date: "2019-01-16" },
+  { title: "Load or No-Load Funds?", slug: "/newsletters/load-or-no-load-funds", date: "2019-01-16" },
+  { title: "Why Have a Proprietary Mutual Fund?", slug: "/newsletters/why-have-a-proprietary-mutual-fund", date: "2018-11-28" },
+];
 ---
 <Layout title="Resources" description="Investment newsletters, the Letter of Agreement, and partner links from Sherwood Investments.">
-  <div class="bg-navy-dark text-white py-16 px-4 text-center">
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
     <div class="max-w-3xl mx-auto">
       <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Stay Informed</p>
       <h1 class="font-serif text-4xl font-bold">Resources</h1>
     </div>
   </div>
 
-  <section class="max-w-5xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-    <div class="p-6 border border-gray-100 rounded-xl shadow-sm">
-      <h2 class="font-serif text-xl font-bold text-navy mb-3">Investment Advice &amp; Newsletters</h2>
-      <p class="text-gray-600 text-sm leading-relaxed mb-4">Periodic newsletters covering investment strategies, market insights, and financial planning topics written by Eric J. Linger.</p>
-      <p class="text-sm text-gray-400 italic">Newsletter PDFs will be listed here.</p>
+  <section class="max-w-5xl mx-auto px-4 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <div class="p-6 border border-gray-100 rounded-xl shadow-sm">
+        <h2 class="font-serif text-xl font-bold text-navy mb-3">Documents</h2>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">Client agreements, disclosure documents, and regulatory filings.</p>
+        <ul class="text-sm space-y-3 mt-4">
+          <li><a href="/documents/letter-of-agreement.pdf" class="text-navy hover:text-gold transition-colors flex items-center gap-2" target="_blank">📄 Letter of Agreement</a></li>
+          <li><a href="/documents/adv2.pdf" class="text-navy hover:text-gold transition-colors flex items-center gap-2" target="_blank">📄 ADV Part 2 Disclosure</a></li>
+          <li><a href="/documents/privacy-statement.pdf" class="text-navy hover:text-gold transition-colors flex items-center gap-2" target="_blank">📄 Privacy Statement</a></li>
+        </ul>
+      </div>
+      <div class="p-6 border border-gray-100 rounded-xl shadow-sm md:col-span-2">
+        <h2 class="font-serif text-xl font-bold text-navy mb-3">Partner Links</h2>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">We work with a network of investment professionals to develop your financial plan and manage your investments.</p>
+        <ul class="text-sm text-navy space-y-2 mt-4">
+          <li><a href="https://www.schwab.com" class="hover:text-gold transition-colors" target="_blank" rel="noopener">Charles Schwab (My Account) →</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="p-6 border border-gray-100 rounded-xl shadow-sm">
-      <h2 class="font-serif text-xl font-bold text-navy mb-3">Letter of Agreement</h2>
-      <p class="text-gray-600 text-sm leading-relaxed mb-4">Our standard client agreement outlines the terms of our engagement, compensation structure, and fiduciary commitment.</p>
-      <p class="text-sm text-gray-400 italic">Document available upon request.</p>
-    </div>
-    <div class="p-6 border border-gray-100 rounded-xl shadow-sm">
-      <h2 class="font-serif text-xl font-bold text-navy mb-3">Partner Links</h2>
-      <p class="text-gray-600 text-sm leading-relaxed mb-4">We work with a network of investment professionals to develop your financial plan and manage your investments. Useful links to our trusted partners.</p>
-      <ul class="text-sm text-navy space-y-2 mt-4">
-        <li><a href="https://www.schwab.com" class="hover:text-gold transition-colors" target="_blank" rel="noopener">Charles Schwab (My Account) →</a></li>
-      </ul>
+
+    <div>
+      <h2 class="font-serif text-3xl font-bold text-navy mb-2">Investment Advice &amp; Newsletters</h2>
+      <p class="text-gray-600 mb-8">Periodic newsletters covering investment strategies, market insights, and financial planning topics written by Eric J. Linger.</p>
+      <div class="space-y-2">
+        {newsletters.map(n => (
+          <a href={n.slug} class="flex items-center justify-between gap-4 p-4 border border-gray-100 rounded-lg hover:border-gold hover:bg-amber-50 transition-colors group">
+            <span class="text-navy font-medium group-hover:text-gold transition-colors">{n.title}</span>
+            <span class="text-gray-400 text-sm shrink-0">{n.date}</span>
+          </a>
+        ))}
+      </div>
     </div>
   </section>
 </Layout>

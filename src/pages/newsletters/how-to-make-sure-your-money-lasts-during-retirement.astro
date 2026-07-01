@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "How to Make Sure Your Money Lasts During Retirement";
+const date = "2021-04-25";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">How much can you safely withdraw each year from your retirement account? 
+The 4% Rule
+How much can you safely withdraw each year from your retirement account?  No one wants to outlive their money and be destitute or dependent on others.  Studies have shown that a “safe” withdrawal rate for a person with a projected remaining life of another 30 to 35 years is between 3% and 4%, adjusted for inflation.  As an example, if you are 60 years old and expect to live another 30 years and have $1-million in a tax-deferred retirement account (IRA), you can withdraw $40,000 a year.  Each year you would adjust this upward to account for inflation.</p>
+      <p class="mb-4">The Problem with the 4% Rule
+It is a nice simple, “one-size-fits-all” solution, promoted by many financial advisors.  But it defies common sense.  Assume Jack retires at age 60 with $1-million in his retirement account and withdraws $40,000 the first year.  We all know that the market fluctuates each year.  If the market drops 30% the first year of Jack’s retirement, which is possible in a bear market, his account is now worth $700,000.  (Actually, it is $660,000 after withdrawing $40,000.)  Jack’s twin sister Jill starts retirement one year after Jack , at age 61 and has an identical account.  Both have approximately $700,000 in their IRA.  Using the 4% rule, Jill would be advised she can safely withdraw $28,000 year, while Jack is withdrawing $40,000 each year.  So, two people with identical accounts are given different “safe” withdrawal amounts.  Obviously, either Jack is taking too much money out of his account or Jill is being too conservative in her retirement withdrawals.  If Jack continues to withdraw 4% each year, it is unlikely his portfolio will bounce back and last his lifetime.</p>
+      <p class="mb-4">Retirement Solution 
+There is nothing wrong with the 4% rule.  It is just being applied too simplistically.  Rather than a schedule of fixed annual withdrawals, a better approach is to take smaller withdrawals in years when the market is lower and larger withdrawals in good market years.  To do this, we recalculate the amount you can withdraw by annually applying the 4% rule to the current account balance.  In addition, we use a smaller withdrawal rate in the early years and increase it in later years.  This gradually gives bigger payouts to retirees as they age.  It adjusts for inflation and market fluctuations and achieves the objective of having the portfolio less likely to outlive the retiree.</p>
+      <p class="mb-4">PRACTICAL APPLICATION
+Most retirees are concerned more about meeting their daily obligations than if they will have enough money at age 95.  They must pay their creditors, regardless of the percentage withdrawal.  In some months, they might exceed the 4% rule.  But they recognize that they cannot do this repeatedly.  To offset larger occasional withdrawals, they cut back their withdrawals in other months.  They withdraw little, or nothing each month, and make withdrawals only as needed.  Over the course of the year, they still average only 4% per year, recalculated every year.  Without a lot of thought, their money is likely to last their lifetime.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

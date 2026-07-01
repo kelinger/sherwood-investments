@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Why Have a Proprietary Mutual Fund?";
+const date = "2018-11-28";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">Most people go to a stockbroker to get independent advice. However, many of the brokerage statements I have reviewed show that the advice many people receive must have come from a salesperson and the investments were not in the client’s best interest. The client was sold products that the brokerage firm manufactures, rather than investments that were best for the client.</p>
+      <p class="mb-4">Good examples are “proprietary” funds, also called “house funds”. Proprietary mutual funds are funds designed, managed and sold by the brokerage firm. They cannot be transferred to another brokerage house if you should decide to move your account.</p>
+      <p class="mb-4">When I see a client holding a high-cost proprietary fund that is consistently underperforming many similar funds, I question whether the broker provided good, independent advice. The expenses of some of these funds are outrageous. Adding up the expense ratio, turnover costs, and 12b-1 fees,</p>
+      <p class="mb-4">some funds are charging investors as much as 5% annually. On a $50,000 investment, you pay $2,500 every year. And of course, their high costs just increases the likelihood that a proprietary fund will underperform a similar, independent mutual fund.</p>
+      <p class="mb-4">These costs are buried in the prospectus. They may appear to be invisible, but you do</p>
+      <p class="mb-4">pay them.</p>
+      <p class="mb-4">When the market is rising market, these high fees might be masked, but they still cut into the performance. When the market is declining, these fees further reduce your investment return.</p>
+      <p class="mb-4">There are thousands of mutual funds available to you. Why settle for a proprietary mutual fund that has high hidden costs, can not be moved to another brokerage firm, an is probably underperforming similar mutual funds?</p>
+      <p class="mb-4">If you want to know the cost you’re really paying for your mutual fund, please contact us.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

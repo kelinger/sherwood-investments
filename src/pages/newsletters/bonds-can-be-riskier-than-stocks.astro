@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = "Bonds Can Be Riskier Than Stocks";
+const date = "2019-01-16";
+---
+<Layout title={title} description={`${title} — Newsletter from Sherwood Investments`}>
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/resources.jpg') center/cover no-repeat;">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Newsletter</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">{title}</h1>
+      <p class="text-gray-300 text-sm">{date}</p>
+    </div>
+  </div>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <a href="/resources" class="text-gold text-sm hover:underline">&larr; Back to Resources</a>
+    <div class="mt-8 text-gray-700 leading-relaxed text-base">
+      <p class="mb-4">Overview</p>
+      <p class="mb-4">Historically, if you wanted income, you purchased income investments such as bonds or preferred stock. However, data suggests that stocks may be a better source of income.</p>
+      <p class="mb-4">This might seem implausible since most stocks do not have very significant dividends. (The average dividend of the S&P 500 is 1.3%.) The reason hinges on the fact that as stocks appreciate over time, stock dividends also appreciate. So you are continually receiving a higher dividend yield on your initial investment. More importantly, the price appreciation of stocks can be used as a substantial source of income.</p>
+      <p class="mb-4">Here Are The Facts</p>
+      <p class="mb-4">A study published in the AAII Journal (February 1998) indicated that a portfolio heavier in stocks provided a better chance of a retiree meeting his/her income needs than a portfolio of all bonds. For the period analyzed from 1926 to 1995, the data showed that if an investor wanted to draw 7% annually on their portfolio for 20 years after retiring, a 100% bond portfolio would have been successful in delivering the necessary income only 47% of the time. On the other hand, a portfolio of stocks would have been successful at delivering the required income 92% of the time.</p>
+      <p class="mb-4">If we look at the same data but only for the period since World War II, stocks show up even better than bonds as a retirement income source.</p>
+      <p class="mb-4">Stocks would have been successful 100% of the time in producing a 7% annual income while bonds would have been successful only 42% of time.</p>
+      <p class="mb-4">The best part about this study is that it takes into account that stocks can be more volatile than bonds. The study accounted for the fact that a retiree would need to take their 7% income even in years when their portfolio was declining in value and thus tests these hypothetical portfolios under a real-life scenario.</p>
+      <p class="mb-4">Interpretation</p>
+      <p class="mb-4">If you’ve been staying away from the stock market, worrying that it’s “too high” and relying on income investments to supply your retirement income, I suggest that you might be taking the more financially risky path. I know that stocks seem more risky because many investors focus on the short term. When you look at the long-term, bonds have been the more risky income alternative since they have failed to deliver a 7% income more than half of the time.</p>
+      <p class="mb-4">Bottom Line</p>
+      <p class="mb-4">Some bonds in your portfolio may be appropriate. But don’t rely solely on bonds for income. You need to include stocks and/or mutual funds to reduce the risk of outliving your income source.</p>
+      <p class="mb-4">Your Next Step</p>
+      <p class="mb-4">If you own bonds or are looking for income, please contact us.</p>
+    </div>
+    <div class="mt-12 pt-8 border-t border-gray-100">
+      <a href="/resources" class="text-gold hover:underline text-sm">&larr; Back to all newsletters</a>
+    </div>
+  </article>
+</Layout>

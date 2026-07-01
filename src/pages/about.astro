@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="About" description="About Eric J. Linger, Registered Investment Advisor and principal of Sherwood Investments in Redmond, WA.">
-  <div class="bg-navy-dark text-white py-16 px-4 text-center">
+  <div class="relative text-white py-16 px-4 text-center" style="background: linear-gradient(rgba(19,40,64,0.78), rgba(19,40,64,0.78)), url('/banners/about.jpg') center/cover no-repeat;">
     <div class="max-w-3xl mx-auto">
       <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">The Person Behind the Firm</p>
       <h1 class="font-serif text-4xl font-bold mb-4">About Sherwood Investments</h1>
@@ -12,7 +12,10 @@ import Layout from '../layouts/Layout.astro';
 
   <section class="max-w-5xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
     <div class="md:col-span-2 space-y-4 text-gray-600 leading-relaxed">
-      <h2 class="font-serif text-2xl font-bold text-navy">Eric J. Linger, RIA</h2>
+      <div class="flex items-center gap-6 mb-4">
+        <img src="/eric-linger.jpg" alt="Eric J. Linger, Registered Investment Advisor" class="w-28 h-28 rounded-full object-cover shadow-md border-4 border-gold" />
+        <h2 class="font-serif text-2xl font-bold text-navy">Eric J. Linger, RIA</h2>
+      </div>
       <p>Eric J. Linger is a Registered Investment Advisor (RIA) and the principal of Sherwood Investments. He specializes in developing customized financial strategies so clients can retire financially secure, and values the close, personal contact he maintains with each client.</p>
       <p>Prior to founding Sherwood Investments, Mr. Linger was the branch manager of a major Edward Jones investment office in Somerville, NJ. He started his career as an electrical engineer at Bell Labs and advanced to senior executive positions in financial planning and analytical areas at AT&amp;T.</p>
       <p>Mr. Linger received a Bachelor of Science in Electrical Engineering (BSEE) from Penn State, a Master of Science in Electrical Engineering (MSEE) from New York University, and an MBA from Monmouth University.</p>
