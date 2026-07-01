@@ -2,6 +2,11 @@
 import '../styles/global.css';
 interface Props { title: string; description?: string; }
 const { title, description = "Sherwood Investments — Fee-only financial planning and investment management in Redmond, WA." } = Astro.props;
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const active = (href: string) => {
+  if (href === '/') return path === '/';
+  return path === href || path.startsWith(href + '/');
+};
 ---
 <!doctype html>
 <html lang="en">
@@ -26,23 +31,23 @@ const { title, description = "Sherwood Investments — Fee-only financial planni
         </svg>
       </button>
       <ul id="nav-links" class="hidden md:flex gap-6 text-sm font-medium text-gray-200">
-        <li><a href="/" class="hover:text-gold transition-colors">Home</a></li>
-        <li><a href="/services" class="hover:text-gold transition-colors">Services</a></li>
-        <li><a href="/process" class="hover:text-gold transition-colors">Our Process</a></li>
-        <li><a href="/about" class="hover:text-gold transition-colors">About</a></li>
-        <li><a href="/resources" class="hover:text-gold transition-colors">Resources</a></li>
-        <li><a href="/faq" class="hover:text-gold transition-colors">FAQs</a></li>
-        <li><a href="/contact" class="bg-gold text-navy-dark px-4 py-2 rounded font-semibold hover:bg-gold-light transition-colors">Contact</a></li>
+        <li><a href="/" class={`hover:text-gold transition-colors ${active('/') ? 'text-gold border-b-2 border-gold pb-0.5' : ''}`}>Home</a></li>
+        <li><a href="/services" class={`hover:text-gold transition-colors ${active('/services') ? 'text-gold border-b-2 border-gold pb-0.5' : ''}`}>Services</a></li>
+        <li><a href="/process" class={`hover:text-gold transition-colors ${active('/process') ? 'text-gold border-b-2 border-gold pb-0.5' : ''}`}>Our Process</a></li>
+        <li><a href="/about" class={`hover:text-gold transition-colors ${active('/about') ? 'text-gold border-b-2 border-gold pb-0.5' : ''}`}>About</a></li>
+        <li><a href="/resources" class={`hover:text-gold transition-colors ${active('/resources') ? 'text-gold border-b-2 border-gold pb-0.5' : ''}`}>Resources</a></li>
+        <li><a href="/faq" class={`hover:text-gold transition-colors ${active('/faq') ? 'text-gold border-b-2 border-gold pb-0.5' : ''}`}>FAQs</a></li>
+        <li><a href="/contact" class={`px-4 py-2 rounded font-semibold transition-colors ${active('/contact') ? 'bg-gold-light text-navy-dark' : 'bg-gold text-navy-dark hover:bg-gold-light'}`}>Contact</a></li>
       </ul>
     </nav>
     <ul id="mobile-menu" class="hidden md:hidden bg-navy-dark px-4 pb-4 flex-col gap-3 text-sm text-gray-200">
-      <li><a href="/" class="block py-1 hover:text-gold">Home</a></li>
-      <li><a href="/services" class="block py-1 hover:text-gold">Services</a></li>
-      <li><a href="/process" class="block py-1 hover:text-gold">Our Process</a></li>
-      <li><a href="/about" class="block py-1 hover:text-gold">About</a></li>
-      <li><a href="/resources" class="block py-1 hover:text-gold">Resources</a></li>
-      <li><a href="/faq" class="block py-1 hover:text-gold">FAQs</a></li>
-      <li><a href="/contact" class="block py-1 hover:text-gold">Contact</a></li>
+      <li><a href="/" class={`block py-1 hover:text-gold ${active('/') ? 'text-gold font-semibold' : ''}`}>Home</a></li>
+      <li><a href="/services" class={`block py-1 hover:text-gold ${active('/services') ? 'text-gold font-semibold' : ''}`}>Services</a></li>
+      <li><a href="/process" class={`block py-1 hover:text-gold ${active('/process') ? 'text-gold font-semibold' : ''}`}>Our Process</a></li>
+      <li><a href="/about" class={`block py-1 hover:text-gold ${active('/about') ? 'text-gold font-semibold' : ''}`}>About</a></li>
+      <li><a href="/resources" class={`block py-1 hover:text-gold ${active('/resources') ? 'text-gold font-semibold' : ''}`}>Resources</a></li>
+      <li><a href="/faq" class={`block py-1 hover:text-gold ${active('/faq') ? 'text-gold font-semibold' : ''}`}>FAQs</a></li>
+      <li><a href="/contact" class={`block py-1 hover:text-gold ${active('/contact') ? 'text-gold font-semibold' : ''}`}>Contact</a></li>
     </ul>
   </header>
   <main>
