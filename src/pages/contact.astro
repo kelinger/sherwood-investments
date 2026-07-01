@@ -19,14 +19,12 @@ const success = Astro.url.searchParams.get('success');
     </div>
   )}
 
-  <section class="max-w-5xl mx-auto px-4 pt-10 pb-2">
-    <img src="/mom-on-phone.jpg" alt="" class="w-full max-h-72 object-cover rounded-xl shadow-sm" />
-  </section>
-
   <section class="max-w-5xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
     <div>
       <h2 class="font-serif text-2xl font-bold text-navy mb-6">Sherwood Investments</h2>
-      <div class="space-y-4 text-gray-600">
+      <div class="flex gap-6 items-start mb-6">
+        <img src="/mom-on-phone.jpg" alt="" class="w-36 rounded-xl shadow-sm object-cover shrink-0" />
+        <div class="space-y-4 text-gray-600">
         <div>
           <p class="text-xs uppercase tracking-wider text-gold font-semibold mb-1">Address</p>
           <p>23705 NE 61st Street<br />Redmond, WA 98053</p>
@@ -38,6 +36,7 @@ const success = Astro.url.searchParams.get('success');
         <div>
           <p class="text-xs uppercase tracking-wider text-gold font-semibold mb-1">Email</p>
           <a href="mailto:moreinfo@sherwood-investments.com" class="text-navy hover:text-gold transition-colors">moreinfo@sherwood-investments.com</a>
+        </div>
         </div>
       </div>
     </div>
