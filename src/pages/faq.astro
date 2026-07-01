@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+const faqs = [
+  { q: "What is a fiduciary?", a: "A fiduciary cannot accept any commissions and must always do what is best for you, without conflicts of interest. They must be totally independent — they cannot be pressured to sell securities that might be good for their firm but not necessarily good for you." },
+  { q: "Aren't all advisors required to put my best interests first?", a: "No. Even someone who calls himself a \"financial planner\" or advisor — if they accept commissions or are not independent — is not a fiduciary. Brokerage firms frequently pressure advisors to sell certain products like annuities and low-quality stocks. They make money when you buy and when you sell, regardless of whether you do." },
+  { q: "What is the difference between fee-only and fee-based?", a: "A fee-only advisor is compensated solely by the fees you pay directly to them — no other compensation. A fee-based advisor receives fees plus commissions and incentives from their firm. It can be difficult for a fee-based advisor to always act in your best interest. A fee-only advisor is a fiduciary and has a legal obligation to do so." },
+  { q: "How is Sherwood Investments compensated?", a: "Our compensation is based solely on the value of your portfolio. When your portfolio grows, we both benefit. We do not receive one penny in commissions from you or any other party." },
+  { q: "What should I look for in selecting an investment manager?", a: "The investment manager you choose should be a fiduciary, disclose all costs without being asked, have an excellent reputation, and clearly communicate their strategy. Extensive knowledge and experience across different market cycles is essential — as is trust." },
+  { q: "Who are your clients?", a: "Our clients are of all ages. They want to simplify their financial life, make sure they don't outlive their money, and live comfortably both before and after retirement." },
+  { q: "What are the three most frequent questions you are asked?", a: "1. When can I retire? 2. How much can I spend in retirement? 3. Will I be able to leave a legacy for my loved ones?" },
+  { q: "What type of investments are used?", a: "We use only investments with which you are comfortable. For most clients this means mutual funds, ETFs, individual bonds, and stocks. We develop a financial strategy and manage your investments using our proven five-step process." },
+  { q: "Do you give advice on Social Security?", a: "Yes. We have helped many clients optimize their Social Security payouts and navigate Medicare rules to maximize benefits." },
+  { q: "Can you help me decide if I should take a pension or a buyout?", a: "Yes. Analyzing whether to take a buyout instead of a pension is complex. This analysis is done for clients without charge, including options your employer may not have presented." },
+  { q: "Can I get a 529 College Savings Plan through you?", a: "Yes, we can open 529 plans and advise on the best options for your situation." },
+];
+---
+<Layout title="FAQs" description="Frequently asked questions about Sherwood Investments, fee-only financial planning, and working with a fiduciary advisor.">
+  <div class="bg-navy-dark text-white py-16 px-4 text-center">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">Common Questions</p>
+      <h1 class="font-serif text-4xl font-bold">Frequently Asked Questions</h1>
+    </div>
+  </div>
+
+  <section class="max-w-3xl mx-auto px-4 py-16 space-y-6">
+    {faqs.map(faq => (
+      <div class="border border-gray-100 rounded-xl p-6 shadow-sm">
+        <h2 class="font-serif text-lg font-bold text-navy mb-3">{faq.q}</h2>
+        <p class="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+      </div>
+    ))}
+  </section>
+
+  <section class="bg-gray-50 py-12 px-4 text-center">
+    <div class="max-w-xl mx-auto">
+      <h2 class="font-serif text-2xl font-bold mb-4">Still have questions?</h2>
+      <p class="text-gray-600 mb-6">No charge for calls or meetings. We'll get back to you within one business day.</p>
+      <a href="/contact" class="bg-navy text-white px-8 py-3 rounded font-semibold hover:bg-navy-dark transition-colors inline-block">Contact Us</a>
+    </div>
+  </section>
+</Layout>

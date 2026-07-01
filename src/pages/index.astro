@@ -1,17 +1,96 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
+<Layout title="Home">
+  <!-- Hero -->
+  <section class="bg-navy-dark text-white py-28 px-4 text-center">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">Redmond, WA Financial Advisor</p>
+      <h1 class="font-serif text-4xl md:text-5xl font-bold leading-tight mb-6">
+        Achieve Financial Security<br />on Your Terms
+      </h1>
+      <p class="text-lg text-gray-300 mb-8 max-w-xl mx-auto">
+        Fee-only, independent investment management and retirement planning.
+        No commissions. No conflicts of interest. We only succeed when you do.
+      </p>
+      <a href="/contact" class="bg-gold text-navy-dark font-semibold px-8 py-3 rounded hover:bg-gold-light transition-colors text-lg inline-block">
+        Improve My Financial Future
+      </a>
+    </div>
+  </section>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+  <!-- Three pillars -->
+  <section class="max-w-6xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="text-center p-6 border border-gray-100 rounded-xl shadow-sm">
+      <div class="text-gold text-4xl mb-4">📊</div>
+      <h2 class="font-serif text-xl font-bold mb-3">Retirement Planning</h2>
+      <p class="text-gray-600 text-sm leading-relaxed">Expert retirement and estate planning, including advice on maximizing Social Security benefits. We help our clients retire financially secure.</p>
+      <a href="/services" class="mt-4 inline-block text-navy text-sm font-semibold hover:text-gold transition-colors">Learn more →</a>
+    </div>
+    <div class="text-center p-6 border border-gray-100 rounded-xl shadow-sm">
+      <div class="text-gold text-4xl mb-4">📈</div>
+      <h2 class="font-serif text-xl font-bold mb-3">Investment Management</h2>
+      <p class="text-gray-600 text-sm leading-relaxed">Financial plans and portfolios are dynamic — updated as needed, not just once a year, to help you reach your financial goals at every stage of life.</p>
+      <a href="/services" class="mt-4 inline-block text-navy text-sm font-semibold hover:text-gold transition-colors">Learn more →</a>
+    </div>
+    <div class="text-center p-6 border border-gray-100 rounded-xl shadow-sm">
+      <div class="text-gold text-4xl mb-4">🤝</div>
+      <h2 class="font-serif text-xl font-bold mb-3">Fee-Only Advice</h2>
+      <p class="text-gray-600 text-sm leading-relaxed">Our fees are structured so we do better when you do better. No commissions, ever. Totally independent — we report only to you.</p>
+      <a href="/about" class="mt-4 inline-block text-navy text-sm font-semibold hover:text-gold transition-colors">Learn more →</a>
+    </div>
+  </section>
+
+  <!-- Process bar -->
+  <section class="bg-navy text-white py-12 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="font-serif text-2xl font-bold mb-4">Our Proven Five-Step Process</h2>
+      <p class="text-gray-300 mb-6">In our years of managing investments, we've fine-tuned a process that delivers results.</p>
+      <a href="/process" class="border border-gold text-gold px-6 py-2 rounded font-semibold hover:bg-gold hover:text-navy-dark transition-colors inline-block">
+        Learn About Our Process
+      </a>
+    </div>
+  </section>
+
+  <!-- About snippet -->
+  <section class="max-w-6xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="text-gold uppercase tracking-widest text-xs font-semibold mb-2">About Eric J. Linger</p>
+      <h2 class="font-serif text-3xl font-bold mb-4">Registered Investment Advisor &amp; Fiduciary</h2>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        Eric J. Linger is the principal of Sherwood Investments. He values close, personal contact with every client and specializes in developing customized financial strategies so clients can retire financially secure.
+      </p>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        Previously branch manager at a major Edward Jones office, he began his career as an electrical engineer at Bell Labs and held senior executive positions at AT&amp;T. He holds degrees from Penn State, NYU, and Monmouth University.
+      </p>
+      <a href="/about" class="bg-navy text-white px-6 py-2 rounded font-semibold hover:bg-navy-dark transition-colors inline-block">
+        More About Eric
+      </a>
+    </div>
+    <div class="bg-gray-50 rounded-xl p-8 border border-gray-100">
+      <h3 class="font-serif text-xl font-bold mb-4 text-navy">What is a Fiduciary?</h3>
+      <p class="text-gray-600 text-sm leading-relaxed mb-4">
+        A fiduciary cannot accept any commissions or have any conflicts of interest. Because we are a fiduciary, our recommendations are always in your best interest — and we put this in writing for every client.
+      </p>
+      <blockquote class="border-l-4 border-gold pl-4 italic text-gray-500 text-sm">
+        "Our only compensation is based on the value of your portfolio. So when your portfolio grows, we both benefit."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gray-50 py-16 px-4 text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="font-serif text-3xl font-bold mb-4">Ready to simplify your financial life?</h2>
+      <p class="text-gray-600 mb-6">All calls are returned within one business day. No charge for calls or meetings.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="bg-navy text-white px-8 py-3 rounded font-semibold hover:bg-navy-dark transition-colors">
+          Get in Touch
+        </a>
+        <a href="tel:4258988989" class="border border-navy text-navy px-8 py-3 rounded font-semibold hover:bg-navy hover:text-white transition-colors">
+          Call 425-898-8989
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

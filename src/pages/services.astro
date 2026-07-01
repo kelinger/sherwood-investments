@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+const services = [
+  {
+    title: "Financial Planning",
+    desc: "We help you plan and invest for tomorrow. Financial planning ensures a secure financial future and a comfortable retirement. Eric J. Linger navigates the complex world of investment and financial planning with you — not for you."
+  },
+  {
+    title: "Retirement Planning",
+    desc: "Retirement planning is one of the most important financial tasks you'll face. We help you avoid difficult financial situations during retirement with a solid plan in place — both before and after you retire."
+  },
+  {
+    title: "Estate Planning",
+    desc: "Estate planning requires careful consideration of financial and personal affairs and a deep understanding of the ever-changing legal and tax landscape. We work closely with your attorney and CPA and support you in your meetings with them."
+  },
+  {
+    title: "Investment Management",
+    desc: "We select and continuously monitor investments to improve returns and minimize taxes. Many options exist in the market — not all are equal, and not all are suitable for every investor. We find the right fit for you."
+  },
+  {
+    title: "Social Security & Medicare",
+    desc: "We navigate the complex Social Security and Medicare rules on your behalf to maximize your benefits. Many clients are surprised at how much difference the right strategy makes."
+  },
+  {
+    title: "Pension Buyouts",
+    desc: "If you're faced with choosing between a pension or a buyout, all options are analyzed — including options your employer may not have presented. This analysis is done for clients without charge."
+  },
+];
+---
+<Layout title="Services" description="Financial planning, retirement planning, investment management, and more — Sherwood Investments, Redmond WA.">
+  <div class="bg-navy-dark text-white py-16 px-4 text-center">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-2">What We Offer</p>
+      <h1 class="font-serif text-4xl font-bold mb-4">Our Services</h1>
+      <p class="text-gray-300">"We want you to be financially able to do what you want, when you want."</p>
+    </div>
+  </div>
+
+  <section class="max-w-5xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+    {services.map(s => (
+      <div class="p-6 border border-gray-100 rounded-xl shadow-sm">
+        <h2 class="font-serif text-xl font-bold text-navy mb-3">{s.title}</h2>
+        <p class="text-gray-600 text-sm leading-relaxed">{s.desc}</p>
+      </div>
+    ))}
+  </section>
+
+  <section class="bg-gray-50 py-12 px-4 text-center">
+    <div class="max-w-xl mx-auto">
+      <h2 class="font-serif text-2xl font-bold mb-4">Have questions about our services?</h2>
+      <p class="text-gray-600 mb-6">No charge for calls or meetings. All calls returned within one business day.</p>
+      <a href="/contact" class="bg-navy text-white px-8 py-3 rounded font-semibold hover:bg-navy-dark transition-colors inline-block">Contact Us</a>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,85 @@
+---
+import '../styles/global.css';
+interface Props { title: string; description?: string; }
+const { title, description = "Sherwood Investments — Fee-only financial planning and investment management in Redmond, WA." } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <title>{title} | Sherwood Investments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <header class="bg-navy-dark shadow-md sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="/" class="text-white font-serif text-xl font-bold leading-tight">
+        Sherwood<br /><span class="text-gold text-sm font-sans font-normal tracking-widest uppercase">Investments</span>
+      </a>
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <ul id="nav-links" class="hidden md:flex gap-6 text-sm font-medium text-gray-200">
+        <li><a href="/" class="hover:text-gold transition-colors">Home</a></li>
+        <li><a href="/services" class="hover:text-gold transition-colors">Services</a></li>
+        <li><a href="/process" class="hover:text-gold transition-colors">Our Process</a></li>
+        <li><a href="/about" class="hover:text-gold transition-colors">About</a></li>
+        <li><a href="/resources" class="hover:text-gold transition-colors">Resources</a></li>
+        <li><a href="/faq" class="hover:text-gold transition-colors">FAQs</a></li>
+        <li><a href="/contact" class="bg-gold text-navy-dark px-4 py-2 rounded font-semibold hover:bg-gold-light transition-colors">Contact</a></li>
+      </ul>
+    </nav>
+    <ul id="mobile-menu" class="hidden md:hidden bg-navy-dark px-4 pb-4 flex-col gap-3 text-sm text-gray-200">
+      <li><a href="/" class="block py-1 hover:text-gold">Home</a></li>
+      <li><a href="/services" class="block py-1 hover:text-gold">Services</a></li>
+      <li><a href="/process" class="block py-1 hover:text-gold">Our Process</a></li>
+      <li><a href="/about" class="block py-1 hover:text-gold">About</a></li>
+      <li><a href="/resources" class="block py-1 hover:text-gold">Resources</a></li>
+      <li><a href="/faq" class="block py-1 hover:text-gold">FAQs</a></li>
+      <li><a href="/contact" class="block py-1 hover:text-gold">Contact</a></li>
+    </ul>
+  </header>
+  <main>
+    <slot />
+  </main>
+  <footer class="bg-navy-dark text-gray-300 mt-16">
+    <div class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <p class="text-white font-serif text-lg font-bold mb-2">Sherwood Investments</p>
+        <p class="text-sm leading-relaxed">Fee-only, independent financial planning and investment management. We succeed when you succeed.</p>
+      </div>
+      <div>
+        <p class="text-gold font-semibold uppercase tracking-wider text-xs mb-3">Contact</p>
+        <p class="text-sm">23705 NE 61st Street<br />Redmond, WA 98053</p>
+        <p class="text-sm mt-2"><a href="tel:4258988989" class="hover:text-gold transition-colors">425-898-8989</a></p>
+        <p class="text-sm"><a href="mailto:moreinfo@sherwood-investments.com" class="hover:text-gold transition-colors">moreinfo@sherwood-investments.com</a></p>
+      </div>
+      <div>
+        <p class="text-gold font-semibold uppercase tracking-wider text-xs mb-3">Quick Links</p>
+        <ul class="text-sm space-y-1">
+          <li><a href="/services" class="hover:text-gold transition-colors">Services</a></li>
+          <li><a href="/process" class="hover:text-gold transition-colors">Our Process</a></li>
+          <li><a href="/about" class="hover:text-gold transition-colors">About Eric Linger</a></li>
+          <li><a href="/resources" class="hover:text-gold transition-colors">Newsletters & Resources</a></li>
+          <li><a href="/faq" class="hover:text-gold transition-colors">FAQs</a></li>
+          <li><a href="/contact" class="hover:text-gold transition-colors">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 text-center text-xs text-gray-500 py-4">
+      &copy; {new Date().getFullYear()} Sherwood Investments. All rights reserved.
+    </div>
+  </footer>
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
